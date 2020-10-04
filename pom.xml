@@ -10,9 +10,10 @@
     <description>Demo project for Spring Boot</description>
 
     <modules>
-        <module>config-server</module>
+        <module>config-service</module>
         <module>registry-service</module>
         <module>auth-service</module>
+        <module>gateway-service</module>
     </modules>
 
     <parent>
@@ -33,10 +34,7 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-config-server</artifactId>
-        </dependency>
+
     </dependencies>
 
     <dependencyManagement>
